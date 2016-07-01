@@ -38,31 +38,31 @@ nav ul {
 	list-style-type: none;
 	display: inline;
 	position: relative;
-	margin-left: 10px;
+	margin-left: 50px;
 	/*right: 20px;*/
 }
 
 
-nav ul a {
+nav ul li {
 	display: inline-block;
-	margin: 0 5px 0 10px;
+	margin: 0px;
 	padding: 8px 8px;
 	text-decoration: none;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	font-size: 12px;
 	color: #3B464B;
+
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #3B464B;
 	padding: 8px 8px;
 }
 
-nav ul a:hover {
-	background-color: #3B464B;
-	padding: 8px 8px;
-	border-radius: 5px;
-	color: #A3D2DA;
-}
 
-nav ul a:after {
+nav ul li a:hover {
 	background-color: #3B464B;
 	padding: 8px 8px;
 	border-radius: 5px;
@@ -94,7 +94,7 @@ header img {
 }
 
 .circles {
-	margin-top: 15px;
+	margin-top: 30px;
 }
 
 .circles i {
@@ -198,8 +198,9 @@ header img {
 
 .pics {
 	margin: 70px auto 0 auto;
-	width: 900px;
+	width: 100%;
 	height: 350px;
+	display: block;
 }
 .pics img {
 	margin: 20px;
@@ -213,6 +214,7 @@ header img {
 }
 
 .work button {
+	display: block;
 	cursor: pointer;
 	margin: 50px auto 0 auto;
 	font-family: 'Roboto', sans-serif;
@@ -229,6 +231,7 @@ header img {
 article {
 	margin: 0;
 	padding-top: 60px;
+	width: 100%;
 	height: 500px;
 	background-color: #F0F0F0;
 	text-align: center;
@@ -237,10 +240,11 @@ article {
 .top,
 .bottom {
 	margin: 0 auto;
-	width: 800px;
+	width: 80%;
 	height: 200px;
 	display: block;
 	text-align: left;
+	/*padding: 0 50px;*/
 }
 
 article .top img {
@@ -250,6 +254,8 @@ article .top img {
 .top .text {
 	position: relative;
 	left: 20px;
+	/*width: 90%;*/
+	/*padding: 0 100px;*/
 }
 
 article h1 {
@@ -286,12 +292,12 @@ article .top button {
 
 .bottom .text {
 	float: left;
-	width: 630px;
+	width: 75%;
 	margin-right: 20px;
 }
 
 .bottom img {
-	margin-top: 16px;
+	/*margin-top: 16px;*/
 	float: right;
 }
 
@@ -645,13 +651,13 @@ textarea {
 }
 
 form input {
-	width: 400px;
+	width: 100%;
 	height: 30px;
 	margin-bottom: 15px;
 }
 
 form textarea {
-	width: 400px;
+	width: 100%;
 	height: 100px;
 	padding-top: 10px;
 	
@@ -672,7 +678,7 @@ footer button {
 }
 
 footer > div {
-	width: 650px;
+	width: 80%;
 	/*height: 20px;*/
 	margin: 50px auto 0;
 	padding-top: 30px;
@@ -686,7 +692,7 @@ footer .social {
 
 footer .fa-facebook {
 	background-color: #4F4F4F;
-	padding: 6px 8px 4px;
+	padding: 6px 10px 4px;
 	border-radius: 25px;
 	font-size: 150%;
 	color: #3C3C3C;
@@ -704,7 +710,7 @@ footer .fa-twitter {
 footer .fa-html5 {
 	margin: 0 5px;
 	background-color: #4F4F4F;
-	padding: 7px 6px 4px;
+	padding: 7px 9px 4px;
 	border-radius: 25px;
 	font-size: 150%;
 	color: #3C3C3C;
@@ -720,3 +726,144 @@ span {
 	color: #958A68;
 	font-weight: 700;
 }
+
+
+
+@media(max-width: 893px) {
+	.work {
+		height: 900px;
+	}
+
+	.work .pics {
+		height: 550px;
+	}
+}
+
+@media(max-width: 670px) {
+	nav {
+		height: 350px;
+	}
+
+	.fa-heart {
+		font-size: 30px;
+	}
+
+	nav h1 {
+		font-size: 28px;
+		margin: 0;
+	}
+
+	nav ul {
+		display: block;
+		margin: 10px 0;
+	}
+
+	.vector {
+		height: 650px;
+	}
+
+	.vector div {
+		display: block;
+		margin: 50px auto;
+	}
+}
+
+@media(max-width: 600px) {
+	nav {
+		height: 450px;
+	}
+
+	nav header h1 {
+		display: block;
+		right: 0;
+		bottom: 0;
+	}
+
+	.circles {
+		margin-top: 50px;
+	}
+	
+	.work {
+		height: 1500px;
+	}
+
+	.work .pics {
+		height: 1100px;
+	}
+
+
+}
+
+@media(max-width: 865px) {
+	article .text {
+		text-align: center;
+	}
+
+	article div img {
+		display: none;
+	}
+	
+	.top .text {
+		float: none;
+		left: 0;
+	}
+
+	.bottom .text {
+		width: 100%;
+		float: none;
+	}
+}
+
+@media(max-width: 750px) {
+	.team {
+		height: 1200px;
+	}
+
+
+	.one, .two, .three {
+		display: block;
+		margin: 50px auto;
+	}
+
+	.post {
+		height: 1300px;
+	}
+
+	form {
+		width: 50%;
+	}
+}
+
+@media(max-width: 560px) {
+	footer {
+		height: 675px;
+	}
+
+	footer .social {
+		display: block;
+		float: none;
+	}
+
+	footer div p {
+	float: none;
+	margin: 30px 0 0;
+	}
+}
+
+@media(max-width: 427px) {
+	article {
+		height: 550px;
+	}
+	.top {
+		height: 250px;
+	}
+}
+
+
+
+
+
+
+
+
+
